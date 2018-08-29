@@ -1,0 +1,25 @@
+{
+  "name": "zakkin.js",
+  "version": "1.0.0",
+  "description": "A heatmap display library",
+  "keywords": [
+    "canvas",
+    "heatmap"
+  ],
+  "homepage": "https://github.com/p-chan/zakkin.js",
+  "bugs": "https://github.com/p-chan/zakkin.js/issues",
+  "license": "MIT",
+  "author": "p-chan",
+  "main": "zakkin.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/p-chan/zakkin.js.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "contributors": [
+    "p-chan",
+    "kawasako"
+  ]
+}
