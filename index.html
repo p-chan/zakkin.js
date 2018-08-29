@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="./zakkin.js"></script>
+  <script>
+    $(function () {
+      var data = [];
+      var zakkin = new Zakkin();
+      var pick = '';
+      zakkin.init(2000, 1200, data);
+      zakkin.execute();
+      $(document).on({
+        mousemove: function (e) {
+          zakkin.draw({
+            x: e.pageX,
+            y: e.pageY,
+            radius: 30
+          });
+          pick = zakkin.picker(e.pageX, e.pageY);
+          console.log(pick);
+          $('#log').html(pick);
+          console.log('a');
+        }
+      });
+
+      function process() {
+        zakkin.process();
+        requestAnimationFrame(process);
+      }
+      requestAnimationFrame(process)
+
+    });
+  </script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+    }
+
+    body {
+      overflow: hidden;
+    }
+
+    p {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 10px;
+      color: #999;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="stage"></div>
+  <p>汚染度：<span id="log"></span></p>
+</body>
+
+</html>
