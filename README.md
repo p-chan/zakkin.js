@@ -43,7 +43,7 @@ The x-axis px of the point.
 The y-axis px of the point.
 
 ##### Point.radius[Number]
-Radius of drawing circle.
+Radius of drawing circle.
 
 ### Zakkin.prototype.execute()
 Perform initial drawing.
@@ -61,7 +61,7 @@ The x-axis px of the point.
 The y-axis px of the point.
 
 ##### Point.radius[Number]
-Radius of drawing circle.
+Radius of drawing circle.
 
 ### Zakkin.prototype.process()
 Update screen canvas to the current drawing state.
