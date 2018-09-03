@@ -43,13 +43,10 @@ Zakkin.prototype = {
 
   execute: function () {
     var _this = this;
-    // this.setup();
     this.points.forEach(function(point){
       _this.draw(point);
     });
     this.process();
-    this.render('stage');
-    // this.picker();
   },
 
   setup: function () {

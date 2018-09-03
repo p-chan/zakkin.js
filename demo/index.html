@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>Document</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="./zakkin.js"></script>
+  <script src="../zakkin.js"></script>
   <script>
     $(function () {
       var data = [];
@@ -13,6 +13,7 @@
       var pick = '';
       zakkin.init(2000, 1200, data);
       zakkin.execute();
+      zakkin.render('stage');
       $(document).on({
         mousemove: function (e) {
           zakkin.draw({
