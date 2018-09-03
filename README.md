@@ -21,7 +21,15 @@ zakkin.render('stage');
 ```
 
 ## Install
-todo
+```
+$ npm install zakkin
+```
+
+or
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/zakkin@1.0.0/zakkin.min.js"></script>
+```
 
 ## API
 ### Zakkin.prototype.init(width, height, points)
