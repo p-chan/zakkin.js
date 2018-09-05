@@ -28,7 +28,7 @@ $ npm install zakkin
 or
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/zakkin@1.0.0/zakkin.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/zakkin@1.0.1/zakkin.min.js"></script>
 ```
 
 ## API
