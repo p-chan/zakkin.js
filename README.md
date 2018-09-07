@@ -2,6 +2,10 @@
 
 > zakkin.js is a heatmap display library
 
+![example](./assets/example.jpg)
+
+Please check [zakkin.js's demo](https://p-chan.github.io/zakkin.js/demo/)
+
 ## Usage
 ```javascript
 cosnt points = [{
